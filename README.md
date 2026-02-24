@@ -20,9 +20,8 @@
     <p>2. Click on a valid square on the board to move the piece.</p>
     <p>3. The game will indicate whose turn it is and highlight valid and invalid moves accordingly.</p>
     <h2>Feedback and Contributions</h2>
-    <p>Feedback is always welcome! If you find any issues or have suggestions for improvement, please open an issue in the GitHub repository.</p>
+    <p>Feedback is always welcome! If you find any issues or have a suggestion for improvement, please open an issue in the GitHub repository.</p>
     <footer>
-        <p>Made by @achalnm</p>
         <p>
             <a href="https://github.com/achalnm" target="_blank" style="color: yellow;">GitHub</a> |
             <a href="https://www.linkedin.com/in/achal-n-35153821b/" target="_blank" style="color: yellow;">LinkedIn</a> |
