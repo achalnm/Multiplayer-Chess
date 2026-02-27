@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Multiplayer Chess Game</h1>
-    <p>Welcome to the Interactive Chess Game! This project is a fully functional chess game that emphasizes a visually stunning interface and multiplayer support. Below you'll find an overview of the key features and how to get started.</p>
+    <p>This project is a fully functional chess game that emphasizes a visually stunning interface and multiplayer support. Below you'll find an overview of the key features and how to get started.</p>
     <h2>Features</h2>
     <ul>
         <li><strong>Multiplayer Support:</strong> Play chess with friends in a multiplayer environment. The game supports two players taking turns to make moves.</li>
