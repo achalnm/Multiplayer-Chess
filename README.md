@@ -1,32 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1>Multiplayer Chess Game</h1>
-    <p>This project is a fully functional chess game that emphasizes a visually stunning interface and multiplayer support. Below you'll find an overview of the key features and how to get started.</p>
-    <h2>Features</h2>
-    <ul>
-        <li><strong>Multiplayer Support:</strong> Play chess with friends in a multiplayer environment. The game supports two players taking turns to make moves.</li>
-        <li><strong>Visually Stunning Design:</strong> The game board and pieces are designed to be visually appealing, with chess pieces resembling their real-world counterparts.</li>
-        <li><strong>Valid and Invalid Moves:</strong> The game provides visual feedback on valid and invalid moves, helping players understand the rules and limitations of each piece.</li>
-    </ul>
-    <h2>Getting Started</h2>
-    <p>To get started with the game, clone the repository and open the <code>index.html</code> file in your web browser. The game is ready to play immediately with no additional setup required.</p>
-    <h2>How to Play</h2>
-    <p>1. Click on a piece to select it.</p>
-    <p>2. Click on a valid square on the board to move the piece.</p>
-    <p>3. The game will indicate whose turn it is and highlight valid and invalid moves accordingly.</p>
-    <h2>Feedback and Contributions</h2>
-    <p>Feedback is always welcome! If you find any issues or have a suggestion for improvement, please open an issue in the GitHub repository.</p>
-    <footer>
-        <p>
-            <a href="https://github.com/achalnm" target="_blank" style="color: yellow;">GitHub</a> |
-            <a href="https://www.linkedin.com/in/achal-n-35153821b/" target="_blank" style="color: yellow;">LinkedIn</a> |
-            <a href="https://instagram.com/achal_n26" target="_blank" style="color: yellow;">Instagram</a>
-        </p>
-    </footer>
-</body>
-</html>
+# Chess
+
+A local two-player chess game that runs in the browser with no setup.
+
+I started this project in my second year of BE Computer Science at Jyothy Institute of Technology, VTU. It was a learning exercise while I was getting to grips with JavaScript. The original version only had pawn movement. I came back to it later and finished the full game.
+
+## What this is
+
+Two people play on the same screen, taking turns. This is a hotseat game, not an online multiplayer game. Both players share one browser window and hand the keyboard and mouse back and forth.
+
+## How to run
+
+Download or clone the repository, then open `index.html` in any browser. That is all. No server, no build step, no dependencies.
+
+## Screenshots
+
+### Starting position
+
+![Starting position](screenshots/1_starting_position.png)
+
+All 32 pieces on the board, white to move first.
+
+### Move hints
+
+![Knight move hints](screenshots/2_knight_moves.png)
+
+Click any piece to select it. Every legal move lights up in green. Here the white knight on b1 shows its three available L-shape jumps.
+
+### Queen range
+
+![Queen move hints](screenshots/3_queen_moves.png)
+
+The queen highlights all the squares it can reach in one move, across ranks, files, and diagonals. Moves that would leave the king in check are filtered out and not shown.
+
+### Check detection
+
+![King in check](screenshots/4_king_in_check.png)
+
+When a king is under attack, the square turns red and the turn indicator says "in check!". The player must resolve the check before making any other move.
+
+## How to play
+
+1. Click a piece to select it. Legal moves highlight in green.
+2. Click a highlighted square to move there.
+3. Click the same piece again to deselect it.
+
+## What the game supports
+
+- All standard piece movements: pawns, rooks, bishops, queens, knights, and kings
+- Check detection with a red highlight on the king in check
+- Checkmate detection with a win message
+- Stalemate detection with a draw message
+- Castling on both kingside and queenside for both colours
+- Pawn promotion to queen when a pawn reaches the back rank
+- Illegal moves are blocked, including moves that would leave your own king in check
+
+## Reset
+
+Click the Reset Game button at any time to start a new game.
+
+## Links
+
+[GitHub](https://github.com/achalnm) | [LinkedIn](https://www.linkedin.com/in/achal-n-35153821b/) | [Instagram](https://instagram.com/achal_n26)

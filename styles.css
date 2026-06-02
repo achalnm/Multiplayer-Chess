@@ -26,7 +26,9 @@ main {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: #333;
+    padding: 0.4rem 1.4rem;
+    border-radius: 6px;
+    transition: background-color 0.25s, color 0.25s;
 }
 
 #chessboard {
@@ -61,12 +63,27 @@ main {
     background-color: #d8d8d8;
 }
 
-.valid-move {
-    background-color: rgba(0, 255, 0, 0.5);
+.square.valid-move,
+.square.selected,
+.square.in-check,
+.square.invalid-move {
+    transition: none;
 }
 
-.invalid-move {
-    background-color: rgba(255, 0, 0, 0.5);
+.square.valid-move {
+    background-color: #5fbf5f !important;
+}
+
+.square.invalid-move {
+    background-color: rgba(220, 40, 40, 0.8) !important;
+}
+
+.square.selected {
+    background-color: #7de87d !important;
+}
+
+.square.in-check {
+    background-color: rgba(220, 50, 50, 0.9) !important;
 }
 
 #reset {
